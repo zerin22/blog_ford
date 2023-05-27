@@ -255,13 +255,22 @@ ul li {
         background-color: #ddd;
         color: black;
     }
-      
+     
+    .topnav  :hover
+    {
+        background-color: none;
+    }
     .topnav a.icon {
     /* background: black; */
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav  a.icon:hover
+    {
+        background-color: none;
     }
       
     .active {
