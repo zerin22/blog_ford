@@ -1,26 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 0;
 }
 
-p, a, input {
+p,
+a,
+input {
     font-family: 'Open Sans', sans-serif;
 }
 
-.poppins{
+.poppins {
     font-family: 'Poppins', sans-serif;
 }
 
-.hk_grotesk{
+.hk_grotesk {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1440px !important
 }
@@ -32,17 +39,22 @@ p, a, input {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* height: 742px; */
 }
 
-.header_inner{
+.header_inner {
     padding-top: 26px;
+}
+
+ul li {
+    list-style: none;
 }
 
 .nav_items {
     gap: 40px;
 }
 
-.nav_items a{
+.nav_items a {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -51,7 +63,7 @@ p, a, input {
     color: #FFFFFF;
 }
 
-.nav_items button{
+.nav_items button {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
@@ -72,11 +84,11 @@ p, a, input {
 
 }
 
-.banner_inner{
+.banner_inner {
     padding-top: 120px;
 }
 
-.banner_inner h1{
+.banner_inner h1 {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -86,34 +98,181 @@ p, a, input {
     margin-bottom: 40px;
 }
 
-.input__search{
+.search__group {
+    max-width: 760px;
+    height: 56px;
+    margin: auto;
+    display: flex;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
     position: relative;
-    text-align: center;
+    margin-bottom: 23px;
 }
 
-.input__search input{
-    height: 56px;
-    width: 760px;
+.search__group input {
+    border: none;
+    background: transparent;
+    padding: 8px;
+}
+
+.search__group input::placeholder {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #959EAD;
+    padding-left: 52px;
+}
+
+.search__group img {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.search__group button {
+    background: #B41F45;
+    border-radius: 8px;
+    padding: 9px 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
     border: none;
 }
 
-.search__image{
-    position: absolute;
-}
-.search__image img{
-    height: 16px;
-    width: 16px;
-    /* padding-top: 20px ;
-    padding-bottom: 20px ; */
+.tag {
+    padding-bottom: 96px;
+    gap: 16px;
+    margin-left: 328px;
 }
 
-.banner_inner input::placeholder {
-
+.tag p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
 }
 
-.tag{
-    margin-bottom: ;
+.tag button {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    padding: 8px 32px;
 }
 
 
 /* end header */
+
+@media screen and (max-width:2560px) {
+    .mobile-container {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    .mobile-container {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .mobile-container {
+        display: none;
+    }
+    .nav_items {
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .header_inner {
+        display: none !important;
+    }
+
+    .mobile-container {
+        display: block !important;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background: transparent;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+      
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav img{
+        height: 50px;
+    }
+
+    .topnav a{
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav button{
+        color: white;
+        padding: 5px 10px;
+        font-size: 17px;
+        display: block;
+        background: transparent;
+        border: 1px solid #fff;
+        margin-left: 15px;
+        border-radius: 2000px;
+        margin-top: 10px;
+    }
+
+    .topnav button:hover{
+        color: #000;
+        background: #fff;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+      
+    .topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+      
+    .active {
+    background-color: #3b4642;
+    color: white;
+    }
+
+    .tag {
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width:425px) {}
