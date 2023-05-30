@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+    .how{
+        position: relative;
+        color: red;
+    } 
+
+    .how::before{
+        position: absolute;
+        content: "";
+        height: 2px;
+        top: 0;
+        width: 100%;
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+        background-color:green;
+		  
+    }
+    .you{
+        position: relative;
+    }
+    .you::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+        background-color:green;
+    }
+
+    /* dh */
+    h1{
+        position: relative;
+        display: inline-block;
+    } 
+
+    h1::before{
+        position: absolute;
+        content: "";
+        height: 2px;
+        top: 0;
+        width: 30%;
+		left: 0;
+        background-color:green;
+		  
+    }
+
+    h1::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        bottom: 0;
+        width: 30%;
+        right: 10px;
+        background-color:green;
+    }
+    </style>
+</head>
+<body>
+    <h1>How are you?</h1>
+    <!-- <h1><span class="how">How</span> are <span class="you">you</span>?</h1> -->
+</body>
+</html>
