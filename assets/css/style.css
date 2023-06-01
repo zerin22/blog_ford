@@ -66,6 +66,13 @@ ul li {
     gap: 40px;
 }
 
+.nav_items a:hover{
+    background-color: #223B74 ;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 .nav_items a {
     text-decoration: none;
     font-weight: 600;
@@ -73,6 +80,7 @@ ul li {
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
+    transition: .04 ease-in;
 }
 
 .nav_items button {
@@ -253,6 +261,10 @@ ul li {
     padding: 8px 16px;
     /* margin-bottom: 37px; */
 }
+.txt_feature>span:hover{
+    color: #D9F0E6;
+    background: #223B74;
+}
 
 .txt_feature h2 {
     font-weight: 700;
@@ -401,7 +413,13 @@ ul li {
     padding: 7px 16px;
     margin-top: 32px;
     margin-left: 32px;
+    transition: .4s ease-in-out;
 } 
+
+.popular__content button:hover{
+    background-color: #223B74;
+    color: #FFFFFF;
+}
 
 .popular_inner{
     padding-left: 48px;
@@ -463,7 +481,7 @@ ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -486,9 +504,7 @@ ul li {
 }
 
 .recent__inner{
-    padding-top: 273px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 271px 32px 40px 32px;
 }
 
 .recent__inner h2{
@@ -546,6 +562,8 @@ ul li {
     right: -30px;
 }
 /* owl carousel end */
+
+
 
 /* all article */
 .all_article{
@@ -610,19 +628,13 @@ ul li {
 /* more details end */
 /* Footer */
 
-.footer_inner{
-   
-}
-
 .foo_content{
     gap: 12px;
 }
 
 .get_story{
     background-color: #B41F45;
-    margin-top: -2px;
     padding-top: 10px;
-    padding-right: 69px;
     padding-bottom: 138px;
 }
 
@@ -670,6 +682,12 @@ ul li {
     text-align: center;
     border: 1px solid #223B74;
     border-radius: 8px;
+    transition: .4s ease-in;
+}
+
+.mail_us button:hover{
+    background-color: #FFFFFF;
+    color: #223B74;
 }
 
 .get_story p{
@@ -711,8 +729,6 @@ ul li {
     height: 200px;
     width: 237px;
     z-index: -9;
-    /* top: 42px; */
-    /* right: -51px; */
     bottom: -42px;
     left: -61px;
     background-color: #AB2148;
@@ -775,12 +791,109 @@ ul li {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    transition: .4s ease-in-out;
+}
+
+.inner_box ul li:hover{
+    color:#FFFFFF;
+    /* font-size: 18px; */
 }
 
 
 /* Footer end */
 
+/* detail Page */
+.bg_img_2 {
+    background-image: url(/assets/images/Hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 742px;
+}
 
+.hero_inner {
+    padding-top: 285px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 250px;
+}
+
+.hero_inner h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.force_content{
+    margin-bottom: 44px;
+}
+
+.force_content h2{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100px;
+    letter-spacing: 0.2px;
+    color: #223B74;
+    margin-bottom: 30px;
+}
+
+.ford_header{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100px;
+    letter-spacing: 0.2px;
+    color: #223B74;
+}
+
+.ford_content{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A7184;
+}
+
+
+.full_content{
+    margin-bottom: 82px;
+}
+
+.inner_img{
+    /* height: 398px; */
+    width: 100%;
+}
+
+.engine{
+    margin-top: 98px;
+    margin-bottom: 130px;
+}
+
+.engine h2{
+    margin-bottom: 62px;
+}
+
+.fuel_efficiency{
+    margin-bottom: 158px;
+}
+
+.features{
+    margin-top: 98px;
+    margin-bottom: 98px;
+}
+
+.features h2{
+    margin-bottom: 78px;
+}
+
+.final_thought{
+    margin-bottom: 138px;
+}
+
+/* detail Page end */
 
 
 
@@ -799,6 +912,32 @@ ul li {
 }
 
 @media screen and (max-width:1024px) {
+    
+    .boxWrap{
+        width: 350px;
+        margin-left: 0px;
+    }
+
+    .get_story{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 90px;
+    }
+
+    .foo_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    /* .story_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
     .mobile-container {
         display: none;
     }
@@ -807,9 +946,47 @@ ul li {
         gap: 30px;
     }
 
+    .owl-prev {
+        left: -4px;
+    }
+
+    .owl-next {
+        right: -4px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
+   
+    .footer_bottom {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    .search__group{
+        width:400px;
+    }
+
+    .popular_writter {
+        flex-direction: column;
+        align-items: left !important;
+    }
+
+    .story_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recent__inner {
+        padding-top: 100px;
+    }
+
+    .boxWrap{
+        display: none;
+    }
+   
     .header_inner {
         display: none !important;
     }
@@ -820,7 +997,7 @@ ul li {
 
     .topnav {
         overflow: hidden;
-        /* background: rgba(116, 112, 112, 0.445); */
+        background: rgba(116, 112, 112, 0.445);
         position: relative;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -898,18 +1075,43 @@ ul li {
         flex-direction: column;
     }
 
+    .get_story {
+        text-align: center;
+    }
+    
+    .mail_us{
+        flex-direction: column;
+        gap:10px,
+    }
+    
+    .bottom_boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 }
 
 @media screen and (max-width:425px) {
-    
+   
+    .head_check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular_cl{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .recent__inner {
+        padding-top: 240px;
+    }
+   
     .get_story{
         text-align: center;
         padding-right: 0px;
-    }
-
-    .get_story input{
-        width: ;
     }
 
     .boxWrap{
@@ -918,6 +1120,94 @@ ul li {
     
     .search__group {
         width: 400px;
+    }
+
+    .header_inner {
+        display: none !important;
+    }
+
+    .mobile-container {
+        display: block !important;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background: rgba(116, 112, 112, 0.445);
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .topnav :hover {
+        background: rgba(116, 112, 112, 0.445);
+    }
+
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav img {
+        height: 50px;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        background: none;
+        color: #fff;
+    }
+
+    .topnav a.icon:hover {
+        background: rgba(116, 112, 112, 0.445);
+        color: #fff;
+    }
+
+    .topnav button {
+        color: white;
+        padding: 5px 10px;
+        font-size: 17px;
+        display: block;
+        background: transparent;
+        border: 1px solid #fff;
+        margin-left: 15px;
+        border-radius: 2000px;
+        margin-top: 10px;
+    }
+
+    .topnav button:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        transition: 0.4s all linear;
+    }
+
+    .topnav :hover {
+        background-color: rgba(116, 112, 112, 0.445);
+    }
+
+    .active {
+        background-color: #3b4642;
+        color: white;
+    }
+
+    .tag {
+        margin-left: 0px;
+        flex-direction: column;
     }
 
     .popular_writter{
@@ -955,6 +1245,10 @@ ul li {
 
 @media screen and (max-width: 320px) {
     
+
+    .mail_us input{
+        width: 300px;
+    }
 
     .recent__inner p {
         margin-bottom: 0px;
