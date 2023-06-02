@@ -683,6 +683,7 @@ ul li {
     border: 1px solid #223B74;
     border-radius: 8px;
     transition: .4s ease-in;
+    white-space: nowrap;
 }
 
 .mail_us button:hover{
@@ -834,11 +835,6 @@ ul li {
 }
 
 .force_content h2{
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 100px;
-    letter-spacing: 0.2px;
-    color: #223B74;
     margin-bottom: 30px;
 }
 
@@ -878,6 +874,10 @@ ul li {
 
 .fuel_efficiency{
     margin-bottom: 158px;
+}
+
+.fuel_content h2{
+    margin-bottom: 30px;
 }
 
 .features{
@@ -957,6 +957,42 @@ ul li {
 }
 
 @media screen and (max-width:768px) {
+
+    .hero_inner {
+        padding-top: 150px;
+    }
+
+    .fuel_efficiency {
+        margin-bottom: 50px;
+    }
+
+    .features h2 {
+        margin-bottom: 35px;
+    }
+
+    .features {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    
+    .final_thought {
+        margin-bottom: 50px;
+    }
+
+    .hero_inner h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .ford_header{
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .engine {
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
    
     .footer_bottom {
         padding-top: 60px;
